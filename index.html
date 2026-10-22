@@ -2,66 +2,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17232B">
 
-  <meta
-    name="description"
-    content="Morufe Studios is a Johannesburg creative brand focused on branding, identity, design and motion."
-  >
+    <meta name="description" content="Morufe Studios is a Johannesburg design studio creating thoughtful identities and purposeful design.">
 
-  <title>Morufe Studios | Designing What's Next</title>
+    <title>Morufe Studios | Designing What's Next</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Raleway:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="home-page">
 
-  <header class="site-header">
-    <a class="brand brand-light" href="index.html" aria-label="Morufe Studios home">
-      morufe<span class="brand-ring" aria-hidden="true"></span>
-    </a>
+    <!-- HEADER -->
+    <header class="site-header">
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+        <!-- Keep the existing Morufe Studios logo -->
+        <a class="brand" href="index.html" aria-label="Morufe Studios home">
+            <img
+                src="Web/Logo-01.png"
+                alt="Morufe Studios"
+                class="brand-logo"
+            >
+        </a>
 
-  <main>
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+        </button>
 
-    <!-- OPENING SECTION -->
-    <section class="home-hero home-hero-intro">
+        <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+            <a class="active" href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-      <div class="home-content">
-        <p class="eyebrow">
-          Brand &amp; Design · Johannesburg
-        </p>
+    </header>
 
-        <h1>
-          Designing<br>
-          what's <span>next.</span>
-        </h1>
-      </div>
+    <main>
 
-      <div class="home-footer">
-        <span>Morufe Studios</span>
-        <span>Johannesburg · South Africa</span>
-      </div>
+        <!-- INTRODUCTION -->
+        <section class="home-hero home-hero-intro">
 
-    </section>
+            <div class="home-content">
 
-    
+               <p class="eyebrow">
+    <span>Brand and Design Studio</span>
 
-  <script src="script.js"></script>
+    <span class="hero-location-label">
+        Johannesburg ·
+        <time id="johannesburg-time">--:--</time>
+    </span>
+</p>
+
+            
+
+                <h1 class="home-statement-heading">
+                    Designing<br>
+                    what's <span>next.</span>
+                </h1>
+
+
+                <p class="home-statement-bottom">
+                    We bring ideas to life through research, strategic
+                    thinking and creativity, crafting thoughtful design
+                    that communicates with purpose and makes an impact.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FEATURED PROJECT -->
+        <section class="home-featured-section" aria-label="Featured project">
+
+            <a class="home-featured" href="work.html" aria-label="Explore the Gravitas Minerals rebrand">
+
+                <!-- Replace the filename below with your actual image filename -->
+                <img
+                    src="Web Morufe/Gravitas Minerals/For project preview/A7402618-Edit.jpg"
+                    alt="Gravitas Minerals branding and rebrand project by Morufe Studios"
+                    class="featured-project-image"
+                    loading="eager"
+                >
+
+                <span class="featured-overlay" aria-hidden="true"></span>
+
+                <span class="featured-label">
+                    FEATURED
+                </span>
+
+                <span class="featured-caption">
+                    <span class="featured-caption-title">
+                        The Ultimate Rebrand
+                    </span>
+
+                    <span class="featured-caption-project">
+                         Gravitas Minerals
+                    </span>
+                </span>
+
+                <span class="featured-arrow" aria-hidden="true">↗</span>
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="home-footer">
+        <span class="home-footer-name">Morufe Studios</span>
+        <span class="home-footer-location">JOHANNESBURG · SOUTH AFRICA</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Johannesburg local time -->
+    <script>
+        function updateJohannesburgTime() {
+            const timeElement = document.getElementById("johannesburg-time");
+
+            if (!timeElement) return;
+
+            timeElement.textContent = new Intl.DateTimeFormat("en-ZA", {
+                timeZone: "Africa/Johannesburg",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+            }).format(new Date());
+        }
+
+        updateJohannesburgTime();
+        setInterval(updateJohannesburgTime, 1000);
+    </script>
+
 </body>
 </html>

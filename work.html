@@ -2,138 +2,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17232B">
+    <meta name="description" content="Explore selected branding and design projects by Morufe Studios.">
 
-  <meta
-    name="description"
-    content="Explore featured branding, design and motion projects by Morufe Studios."
-  >
+    <title>Our Work | Morufe Studios</title>
 
-  <title>Featured Projects | Morufe Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Raleway:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="inner-page work-page">
 
-  <header class="site-header site-header-dark">
-    <a class="brand" href="index.html" aria-label="Morufe Studios home">
-      morufe<span class="brand-ring" aria-hidden="true"></span>
-    </a>
+    <!-- NAVIGATION -->
+    <header class="site-header site-header-dark">
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a class="active" href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+         <a class="brand" href="index.html" aria-label="Morufe Studios home">
+    <img src="Web/Logo-01.png" alt="Morufe Studios" class="brand-logo">
+</a>
 
-  <main>
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+        </button>
 
-    <!-- PAGE INTRO -->
-    <section class="page-heading">
-      <div class="wrap reveal">
+        <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="work.html" aria-current="page">Work</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-        <p class="eyebrow">Featured Projects</p>
+    </header>
 
-        <h1>
-          From vision<br>
-          <em>to reality.</em>
-        </h1>
+    <main>
 
-        <p class="heading-copy">
-          Explore the projects we've brought to life through branding,
-          design and motion.
-        </p>
+        <!-- PAGE INTRODUCTION -->
+        <section class="page-intro work-intro">
+            <div class="reveal">
 
-      </div>
-    </section>
+                <p class="eyebrow">Selected Work</p>
 
-    <!-- PROJECTS -->
-    <section class="projects-section">
+                <h1>
+                    Featured Projects.<br>
+                    <em>From vision to reality.</em>
+                </h1>
 
-      <!-- GRAVITAS MINERALS -->
-      <article class="project project-dark reveal" id="gravitas">
+                <p class="intro-description">
+                    A selection of work shaped by ideas, strategy and a commitment
+                    to purposeful design.
+                </p>
 
-        <div class="project-number">01</div>
+            </div>
+        </section>
 
-        <div class="project-info">
-          <p class="project-tag">Rebrand · 3D Animation</p>
 
-          <h2>
-            Gravitas<br>
-            Minerals
-          </h2>
+        <!-- PROJECT 01: GRAVITAS MINERALS -->
+        <section class="project project-one">
 
-          <p>
-            A full rebrand paired with a 3D animation of the OPC 1200,
-            giving a mining brand a presence as solid as its equipment.
-          </p>
+            <div class="project-number">01</div>
+
+            <div class="project-copy reveal">
+
+                <p class="eyebrow">Featured Project</p>
+
+                <h2>
+                    Gravitas<br>
+                    <em>Minerals</em>
+                </h2>
+
+                <p class="project-category">
+                    Brand Identity · Visual Direction
+                </p>
+
+                <p class="project-description">
+                    A considered visual direction for a minerals brand, built to
+                    communicate strength, credibility and a clear sense of identity.
+                </p>
+
+            </div>
+
+            <div class="project-visual reveal">
+
+                <img
+                    src="images/GRAVITAS.png"
+                    alt="Gravitas Minerals branding and visual identity"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ADDITIONAL GRAVITAS MINERALS IMAGE -->
+        <section class="project project-two">
+
+            <div class="project-number">01.2</div>
+
+            <div class="project-copy reveal">
+
+                <p class="eyebrow">Brand Exploration</p>
+
+                <h2>
+                    A closer look<br>
+                    <em>at Gravitas</em>
+                </h2>
+
+                <p class="project-category">
+                    Brand Identity · Creative Direction
+                </p>
+
+                <p class="project-description">
+                    Another perspective on the Gravitas Minerals project,
+                    extending the visual story and bringing more of the brand
+                    direction into focus.
+                </p>
+
+            </div>
+
+            <div class="project-visual reveal">
+
+                <img
+                    src="Web morufe/5 Years of Process Innovation/Mockup BackDrop.png"
+                    alt="Additional Gravitas Minerals brand design"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT 02: SEB SOLUTIONS -->
+        <section class="project project-two">
+
+            <div class="project-number">02</div>
+
+            <div class="project-copy reveal">
+
+                <p class="eyebrow">Selected Project</p>
+
+                <h2>
+                    SEB<br>
+                    <em>Solutions</em>
+                </h2>
+
+                <p class="project-category">
+                    Brand Identity · Design
+                </p>
+
+                <p class="project-description">
+                    A brand-focused design approach created to give SEB Solutions
+                    a consistent visual presence and a professional foundation
+                    for communication.
+                </p>
+
+            </div>
+
+            <div class="project-visual reveal">
+
+                <img
+                    src="images/SEB.png"
+                    alt="SEB Solutions branding and design"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT 03: AMORA -->
+        <section class="project">
+
+            <div class="project-number">03</div>
+
+            <div class="project-copy reveal">
+
+                <p class="eyebrow">Selected Project</p>
+
+                <h2>
+                    <em>Amora</em>
+                </h2>
+
+                <p class="project-category">
+                    Brand Identity · Design
+                </p>
+
+                <p class="project-description">
+                    A creative brand project shaped around its own identity,
+                    visual language and communication needs.
+                </p>
+
+            </div>
+
+            <div class="project-visual reveal">
+
+                <img
+                    src="Web morufe/Amora/Free Three Small Metal Can Mockups (1).png"
+                    alt="Amora branding and design project"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT 04: SEMOLE VILLAS -->
+        <section class="project project-two">
+
+            <div class="project-number">04</div>
+
+            <div class="project-copy reveal">
+
+                <p class="eyebrow">Selected Project</p>
+
+                <h2>
+                    Semole<br>
+                    <em>Villas</em>
+                </h2>
+
+                <p class="project-category">
+                    Brand Identity · Design
+                </p>
+
+                <p class="project-description">
+                    A design project bringing the Semole Villas name to life
+                    through a considered and consistent visual presentation.
+                </p>
+
+            </div>
+
+            <div class="project-visual reveal">
+
+                <img
+                    src="Web morufe/Semole Villas/Free_Baseball_Cap_Mockup_1.png"
+                    alt="Semole Villas branding and design project"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT 05: SWITCH ON -->
+        <section class="project">
+
+            <div class="project-number">05</div>
+
+            <div class="project-copy reveal">
+
+                <p class="eyebrow">Selected Project</p>
+
+                <h2>
+                    <em>Switch On</em>
+                </h2>
+
+                <p class="project-category">
+                    Brand Identity · Design
+                </p>
+
+                <p class="project-description">
+                    A visual identity project developed to give Switch On
+                    a recognisable presence and a clear visual direction.
+                </p>
+
+            </div>
+
+            <div class="project-visual reveal">
+
+                <img
+                    src="Web morufe/Switch On/Mockup.jpg"
+                    alt="Switch On branding and design project"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- CLOSING CALL TO ACTION -->
+        <section class="closing-cta work-closing">
+
+            <p class="eyebrow">Your vision, our next project</p>
+
+            <h2>
+                Let's make<br>
+                <em>it meaningful.</em>
+            </h2>
+
+            <a class="text-link" href="contact.html">
+                Work with us <span aria-hidden="true">↗</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <a class="brand" href="index.html" aria-label="Morufe Studios home">
+            morufe<span class="brand-ring">o</span>
+        </a>
+
+        <p>Independent thinking. Purposeful design.</p>
+
+        <div class="footer-bottom">
+
+            <span>© 2026 Morufe Studios</span>
+
+            <div class="footer-socials">
+                <a
+                    href="https://www.linkedin.com/company/morufe-studios"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
+            </div>
+
+            <span>Johannesburg, South Africa</span>
+
         </div>
 
-        <div class="project-visual">
-          <img
-            src="images/GRAVITAS.png"
-            alt="Gravitas Minerals brand and creative project"
-          >
-        </div>
+    </footer>
 
-      </article>
+    <script src="script.js"></script>
 
-      <!-- SEB SOLUTIONS -->
-      <article class="project project-light reveal" id="seb-solutions">
-
-        <div class="project-number">02</div>
-
-        <div class="project-info">
-          <p class="project-tag">Brand Identity</p>
-
-          <h2>
-            SEB<br>
-            Solutions
-          </h2>
-
-          <p>
-            A brand identity built from the ground up, giving SEB Solutions
-            a visual language that matches the precision of its work.
-          </p>
-        </div>
-
-        <div class="project-visual">
-          <img
-            src="images/SEB.png"
-            alt="SEB Solutions brand identity project"
-          >
-        </div>
-
-      </article>
-
-      <div class="future-work reveal">
-        More work is coming.
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <a class="brand" href="index.html">
-      morufe<span class="brand-ring" aria-hidden="true"></span>
-    </a>
-
-    <span>© 2026 Morufe Studios</span>
-    <span>Johannesburg · South Africa</span>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
