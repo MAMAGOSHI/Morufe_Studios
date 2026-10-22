@@ -1489,3 +1489,298 @@ blockquote cite {
   }
 
 }
+
+
+/* =========================================================
+   MORUFE STUDIOS
+   HOMEPAGE FEATURED PROJECT
+   Add this section at the bottom of the existing style.css
+========================================================= */
+
+/* Keep the homepage opening section solid charcoal */
+.home-page .home-hero-intro {
+  min-height: 100svh;
+  background: var(--charcoal);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure the opening section does not use the old hero image */
+.home-page .home-hero-intro .hero-media {
+  display: none;
+}
+
+.home-page .home-hero-intro {
+  align-items: center;
+}
+
+.home-page .home-hero-intro .home-content {
+  width: min(900px, 90vw);
+  margin: 0 auto;
+  padding: 150px 0 120px;
+}
+
+.home-page .home-hero-intro .home-content h1 {
+  max-width: 850px;
+  font-family: var(--display);
+  font-size: clamp(3.4rem, 7.5vw, 7.5rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+}
+
+.home-page .home-hero-intro .home-content h1 span {
+  color: var(--orange);
+}
+
+/* Full-screen featured project */
+.featured-home-project {
+  min-height: 100svh;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 110px 5vw 90px;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+/* Existing Gravitas image is reused */
+.featured-home-image {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(23, 35, 43, 0.94) 0%,
+      rgba(23, 35, 43, 0.70) 48%,
+      rgba(23, 35, 43, 0.25) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(23, 35, 43, 0.65),
+      rgba(23, 35, 43, 0.08)
+    ),
+    url("images/GRAVITAS.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.01);
+}
+
+.featured-home-content {
+  width: min(900px, 90vw);
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.featured-home-content .eyebrow {
+  color: var(--orange);
+}
+
+.featured-home-content h2 {
+  max-width: 850px;
+  font-family: var(--display);
+  font-size: clamp(3.4rem, 7.5vw, 7.5rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.featured-home-content h2 em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+.featured-home-description {
+  max-width: 460px;
+  margin-top: 28px;
+  color: rgba(245, 245, 245, 0.86);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.featured-home-project .home-enter {
+  margin-top: 35px;
+  width: fit-content;
+  color: var(--white);
+}
+
+.featured-home-project .home-enter .arrow {
+  color: var(--orange);
+}
+
+.featured-home-footer {
+  position: absolute;
+  right: 5vw;
+  bottom: 30px;
+  left: 5vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* Direct links to projects should land below the page header */
+#gravitas,
+#seb-solutions {
+  scroll-margin-top: 20px;
+}
+
+/* Improve long service titles without changing the existing layout */
+.value-item h2 {
+  line-height: 1.25;
+}
+
+.value-item p {
+  line-height: 1.8;
+}
+
+/* Tablet and mobile adjustments */
+@media (max-width: 800px) {
+  .home-page .home-hero-intro .home-content {
+    padding-top: 130px;
+    padding-bottom: 150px;
+  }
+
+  .home-page .home-hero-intro .home-content h1 {
+    font-size: clamp(3rem, 12vw, 5rem);
+    line-height: 1.02;
+  }
+
+  .featured-home-project {
+    min-height: 100svh;
+    padding: 115px 7vw 100px;
+  }
+
+  .featured-home-image {
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(23, 35, 43, 0.86),
+        rgba(23, 35, 43, 0.42)
+      ),
+      linear-gradient(
+        0deg,
+        rgba(23, 35, 43, 0.78),
+        rgba(23, 35, 43, 0.12)
+      ),
+      url("images/GRAVITAS.png");
+    background-position: center;
+  }
+
+  .featured-home-content {
+    width: 100%;
+  }
+
+  .featured-home-content h2 {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .featured-home-footer {
+    right: 7vw;
+    left: 7vw;
+    font-size: 0.58rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page .home-hero-intro .home-content h1 {
+    font-size: 2.8rem;
+    letter-spacing: -0.045em;
+  }
+
+  .featured-home-project {
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+
+  .featured-home-content h2 {
+    font-size: 2.8rem;
+    letter-spacing: -0.045em;
+  }
+
+  .featured-home-description {
+    font-size: 0.88rem;
+  }
+
+  .featured-home-footer {
+    right: 6vw;
+    left: 6vw;
+    gap: 12px;
+    font-size: 0.5rem;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .featured-home-image {
+    transform: none;
+  }
+}
+
+
+.about-hero,
+.page-heading,
+.contact-intro {
+    padding: 90px 0 65px;
+}
+
+.about-hero h1,
+.page-heading h1,
+.contact-intro h1 {
+    font-size: clamp(2.4rem, 9vw, 3.6rem);
+    line-height: 1.12;
+}
+
+.story-section,
+.values-section,
+.quote-section,
+.projects-section,
+.contact-details {
+    padding: 60px 0;
+}
+
+
+/* MORUFE STORY — REDUCED HEADING SIZE */
+.about-hero h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem) !important;
+    line-height: 1.15;
+    max-width: 850px;
+}
+
+.about-hero {
+    padding-top: 80px;
+    padding-bottom: 55px;
+}
+
+/* Keep the story text comfortable to read */
+.story-section p {
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 680px;
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+
+    .about-hero {
+        padding-top: 65px;
+        padding-bottom: 40px;
+    }
+
+    .story-section p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}
